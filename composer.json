@@ -1,0 +1,44 @@
+
+{
+    "name": "omnipay/ippay",
+    "type": "library",
+    "description": "IPpay driver for the Omnipay payment processing library",
+    "keywords": [
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment",
+        "ippay"
+    ],
+    "homepage": "https://github.com/ranimaniyan/omnipay-ippay",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Balakrishnan Subramaniyan",
+            "email": "balakrishnan@aequalisys.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Omnipay\\IPpay\\" : "src/" }
+    },
+    "require": {
+        "omnipay/common": "^3"
+    },
+    "require-dev": {
+        "omnipay/tests": "^3",
+        "squizlabs/php_codesniffer": "^3",
+        "phpro/grumphp": "^0.14.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0.x-dev"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "check-style": "phpcs -p --standard=PSR2 src/",
+        "fix-style": "phpcbf -p --standard=PSR2 src/"
+   },
+   "prefer-stable": true
+}
